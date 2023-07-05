@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reminder Form</title>
+    <!-- Link to CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to calendar icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="SetReminderHeading">Enable Reminder</h1>
+    <form class="SetReminderFrom">
+      <label class="SetReminderFromLabel" for="date">Selected Date:</label>
+      <label class="SetReminderFromInput" id="date"></label>
+      <br /><br />
+      <label class="SetReminderFromLabel" for="subject"
+        >Selected Subject:</label
+      >
+      <label class="SetReminderFromInput" id="subject" name="subject"> </label
+      ><br /><br />
+      <label class="SetReminderFromLabel" for="description">Description:</label
+      ><br />
+      <label
+        class="SetReminderFromInput"
+        id="description"
+        name="description"
+        rows="4"
+        cols="50"
+      ></label
+      ><br /><br />
+      <label class="SetReminderFromLabel" for="email"
+        >Enter Email Address:</label
+      >
+      <label class="SetReminderFromInput" id="email" name="email"></label
+      ><br /><br />
+      <label class="SetReminderFromLabel" for="text">Phone Number</label>
+      <label
+        class="SetReminderFromInput"
+        type="text"
+        id="phone"
+        name="phone number"
+      >
+      </label>
+      <br />
+      <br />
+      <label class="SetReminderFromLabel">Is Reminder Enabled</label>
+      <label class="SetReminderFromInput" id="IsEnable"></label>
+      <br />
+      <br />
+      <input
+        type="submit"
+        id="SetReminderFromBtn"
+        value="Enable"
+        onclick="enable(event)"
+      />
+      <input
+        type="button"
+        id="SetReminderFromBackBtn"
+        value="Back"
+        class="Back-btn"
+        onclick="cancel()"
+      />
+    </form>
+    <a href="Logout.html" style="float: right margin-right 10px">Log Out</a>
+    <script src="..\Script\EnableReminder.js"></script>
+  </body>
+</html>

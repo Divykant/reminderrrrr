@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <style>
+      form {
+        margin: 50px auto;
+        padding: 20px;
+        width: 400px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #ddd;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <body>
+      <h2 class="SetReminderHeading">Log-in</h2>
+      <form
+        class="SetReminderFrom"
+        action="HomePage.html"
+        method="post"
+        onsubmit="return verifyPassword()"
+      >
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required /><br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+        <input id="SetReminderFromBtn" type="submit" value="Submit" />
+        <!-- input type="button" value="Back" class="Back-btn"onclick = "cancel()"> -->
+      </form>
+      <script src="..\Script\Login.js"></script>
+    </body>
+  </body>
+</html>

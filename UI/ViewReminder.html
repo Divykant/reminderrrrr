@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ViewReminder</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>View Reminder</h1>
+	<form>
+		<table id="reminders">
+			<tr>
+			<th>
+				Date
+			</th>
+			<th>Subject</th>
+			<th>Description</th>
+			<th>Email</th>
+			<th>ContactNo</th>
+			<th>IsEnabled</th>
+			<th>Select</th></tr>
+		</table>
+        <br>
+        <br>
+        <input type="button" value="Back"class="Back-btn"onclick = "cancel()">
+        <input type="button" value="EnableReminder"class="fwd-btn"onclick = "enable()">
+        <input type="button" value="DisableReminder"class="fwd-btn"onclick = "disable()">
+        <input type="button" value="ModifyReminder"class="fwd-btn"onclick = "modify()">
+        <input type="button" value="DeleteReminder"class="fwd-btn"onclick = "remove()">
+	</form>
+	<a href="Logout.html" style="float: right margin-right 10px;">Log Out</a>
+<script src = "..\Script\ViewReminder.js"> 
+	</script>
+</body>
+</html>

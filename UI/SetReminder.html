@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reminder Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1 class="SetReminderHeading">Set Reminder</h1>
+    <form class="SetReminderFrom" onsubmit="submittt()">
+      <label class="SetReminderFromLabel" for="date">Select A Date:</label>
+      <input
+        class="SetReminderFromInput"
+        type="date"
+        id="date"
+        name="date"
+      /><br /><br />
+      <label class="SetReminderFromLabel" for="subject"
+        >Select A Subject:</label
+      >
+      <select id="subject" name="subject" class="SetReminderFromInput">
+        <option value="Meeting">Meeting</option>
+        <option value="Appointment">Appointment</option>
+        <option value="Deadline">Deadline</option></select
+      ><br /><br />
+      <label class="SetReminderFromLabel" for="description"
+        >Enter Description:</label
+      ><br />
+      <textarea
+        class="SetReminderFromDes"
+        id="description"
+        name="description"
+        rows="4"
+        cols="50"
+      ></textarea
+      ><br /><br />
+      <label class="SetReminderFromLabel" for="email"
+        >Enter Email Address:</label
+      >
+      <input
+        class="SetReminderFromInput"
+        type="email"
+        id="email"
+        name="email"
+      /><br /><br />
+      <label class="SetReminderFromLabel" for="text">Phone Number</label>
+      <input
+        class="SetReminderFromInput"
+        type="text"
+        id="phone"
+        name="phone number"
+      /><br />
+      <br />
+      <br />
+      <label class="SetReminderFromLabel">Is Reminder Enabled</label>
+      <input
+        class="SetReminderFromInput"
+        type="radio"
+        id="radio-yes"
+        name="IsEnable"
+        value="Yes"
+      />
+      <label class="SetReminderFromLabel" for="radio-yes">Yes</label>
+      <input
+        class="SetReminderFromInput"
+        type="radio"
+        id="radio-no"
+        name="IsEnable"
+        value="No"
+      />
+      <label class="SetReminderFromLabel" for="radio-no">No</label>
+      <br />
+      <button id="SetReminderFromBtn" type="submit">Submit</button>
+
+      <input
+        class="SetReminderFromInput"
+        type="button"
+        value="Back"
+        id="SetReminderFromBackBtn"
+        class="Back-btn"
+        onclick="cancel()"
+      />
+    </form>
+    <a href="Logout.html" style="float: right margin-right 10px">Log Out</a>
+
+    <script src="..\Script\SetReminder.js"></script>
+  </body>
+</html>
