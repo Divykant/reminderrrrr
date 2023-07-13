@@ -1,0 +1,61 @@
+body {
+}
+.deleteHeading {
+  text-align: center;
+  background-color: #969696;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+.deleteFromLabel {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.deleteFromInput {
+  display: block;
+  background-color: #fff;
+  margin: 1rem;
+  margin-left: 8rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 80%;
+  font-size: 1.3rem;
+}
+#deleteFromBtn {
+  padding: 1rem;
+  width: 15%;
+  margin: 1rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: red;
+}
+#deleteFromBtn:hover {
+  background-color: rgb(167, 1, 1);
+}
+#deleteFromBackBtn {
+  padding: 1rem;
+  width: 8%;
+  margin: 1rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: blue;
+}
+#deleteFromBackBtn:hover {
+  background-color: rgb(0, 0, 167);
+}
+.deleteLogout {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: blue;
+  margin-left: 2rem;
+  margin-bottom: 8rem;
+}
+.deleteLogout:hover {
+  color: rgb(0, 0, 134);
+}

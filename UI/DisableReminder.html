@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <title>Reminder Form</title>
     <!-- Link to CSS stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/disableStyle.css" />
+
     <!-- Link to calendar icon -->
     <link
       rel="stylesheet"
@@ -12,34 +14,30 @@
     />
   </head>
   <body>
-    <h1 class="SetReminderHeading">Disable Reminder</h1>
-    <form class="SetReminderFrom">
-      <label class="SetReminderFromLabel" for="date">Selected Date:</label>
-      <label class="SetReminderFromInput" id="date"></label>
+    <h1 class="disableHeading">Disable Reminder</h1>
+    <form class="disableFrom">
+      <label class="disableFromLabel" for="date">Date:</label>
+      <label class="disableFromInput" id="date"></label>
       <br /><br />
-      <label class="SetReminderFromLabel" for="subject"
-        >Selected Subject:</label
-      >
-      <label class="SetReminderFromInput" id="subject" name="subject"> </label
+      <label class="disableFromLabel" for="subject">Subject:</label>
+      <label class="disableFromInput" id="subject" name="subject"> </label
       ><br /><br />
-      <label class="SetReminderFromLabel" for="description">Description:</label
+      <label class="disableFromLabel" for="description">Description:</label
       ><br />
       <label
-        class="SetReminderFromInput"
+        class="disableFromInput"
         id="description"
         name="description"
         rows="4"
         cols="50"
       ></label
       ><br /><br />
-      <label class="SetReminderFromLabel" for="email"
-        >Enter Email Address:</label
-      >
-      <label class="SetReminderFromInput" id="email" name="email"></label
+      <label class="disableFromLabel" for="email">Email ID:</label>
+      <label class="disableFromInput" id="email" name="email"></label
       ><br /><br />
-      <label class="SetReminderFromLabel" for="text">Phone Number</label>
+      <label class="disableFromLabel" for="text">Mobile No:</label>
       <label
-        class="SetReminderFromInput"
+        class="disableFromInput"
         type="text"
         id="phone"
         name="phone number"
@@ -47,25 +45,30 @@
       </label>
       <br />
       <br />
-      <label class="SetReminderFromLabel">Is Reminder Enabled</label>
-      <label class="SetReminderFromInput" id="IsEnable"></label>
+      <label class="disableFromLabel">Is Reminder Enabled</label>
+      <label class="disableFromInput" id="IsEnable"></label>
       <br />
       <br />
       <input
         type="submit"
-        id="SetReminderFromBtn"
+        id="disableFromBtn"
         value="Disable"
         onclick="disable(event)"
       />
       <input
         type="button"
-        id="SetReminderFromBackBtn"
+        id="disableFromBackBtn"
         value="Back"
         class="Back-btn"
         onclick="cancel()"
       />
     </form>
-    <a href="Logout.html" style="float: right margin-right 10px">Log Out</a>
+    <a
+      class="disableLogout"
+      href="Logout.html"
+      style="float: right margin-right 10px"
+      >Log Out</a
+    >
     <script src="..\Script\DisableReminder.js"></script>
   </body>
 </html>

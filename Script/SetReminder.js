@@ -13,10 +13,9 @@ function submittt() {
       isEnabled: test.checked,
     },
   ];
-  const prevData = JSON.parse(localStorage.getItem("reminders")); //JSON.parse converts string to JSON object
+  const prevData = JSON.parse(localStorage.getItem("reminders"));
   if (prevData === null) {
-    localStorage.setItem("reminders", JSON.stringify(newReminders)); //JSON.stringify is a method to convert Json to string
-  } else {
+    localStorage.setItem("reminders", JSON.stringify(newReminders));
     prevData.push(newReminders[0]);
     localStorage.setItem("reminders", JSON.stringify(prevData));
   }

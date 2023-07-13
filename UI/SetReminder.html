@@ -4,28 +4,26 @@
     <title>Reminder Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/setStyle.css" />
   </head>
   <body>
     <h1 class="SetReminderHeading">Set Reminder</h1>
     <form class="SetReminderFrom" onsubmit="submittt()">
-      <label class="SetReminderFromLabel" for="date">Select A Date:</label>
+      <label class="SetReminderFromLabel" for="date">Date:</label>
       <input
         class="SetReminderFromInput"
         type="date"
         id="date"
         name="date"
       /><br /><br />
-      <label class="SetReminderFromLabel" for="subject"
-        >Select A Subject:</label
-      >
+      <label class="SetReminderFromLabel" for="subject">Subject:</label>
       <select id="subject" name="subject" class="SetReminderFromInput">
         <option value="Meeting">Meeting</option>
         <option value="Appointment">Appointment</option>
         <option value="Deadline">Deadline</option></select
       ><br /><br />
-      <label class="SetReminderFromLabel" for="description"
-        >Enter Description:</label
+      <label class="SetReminderFromLabel" for="description">Description:</label
       ><br />
       <textarea
         class="SetReminderFromDes"
@@ -35,16 +33,14 @@
         cols="50"
       ></textarea
       ><br /><br />
-      <label class="SetReminderFromLabel" for="email"
-        >Enter Email Address:</label
-      >
+      <label class="SetReminderFromLabel" for="email">Email ID:</label>
       <input
         class="SetReminderFromInput"
         type="email"
         id="email"
         name="email"
       /><br /><br />
-      <label class="SetReminderFromLabel" for="text">Phone Number</label>
+      <label class="SetReminderFromLabel" for="text">Mobile No:</label>
       <input
         class="SetReminderFromInput"
         type="text"

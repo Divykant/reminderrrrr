@@ -1,0 +1,72 @@
+body {
+}
+.viewHeading {
+  text-align: center;
+  background-color: #969696;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+}
+.viewFromLabel {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.viewFromInput {
+  display: block;
+  background-color: #fff;
+  margin: 1rem;
+  margin-left: 8rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 80%;
+  font-size: 1.3rem;
+}
+#viewFromBtn {
+  padding: 1rem;
+  width: 15%;
+  margin: 1rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: red;
+}
+#viewFromBtn:hover {
+  background-color: rgb(167, 1, 1);
+}
+#viewFromBackBtn {
+  padding: 1rem;
+  width: 8%;
+  margin: 1rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: blue;
+}
+#viewFromBackBtn:hover {
+  background-color: rgb(0, 0, 167);
+}
+.viewLogout {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: blue;
+  margin-left: 2rem;
+  margin-bottom: 8rem;
+}
+.viewLogout:hover {
+  color: rgb(0, 0, 134);
+}
+.viewTable {
+  width: 93%;
+  margin: 2rem;
+}
+.viewTableTr {
+}
+.viewTableTh {
+  background-color: #be0059;
+  padding: 1rem;
+  border-radius: 1rem;
+}

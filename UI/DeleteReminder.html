@@ -4,68 +4,61 @@
     <meta charset="UTF-8" />
     <title>Reminder Form</title>
     <!-- Link to CSS stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/deleteStyle.css" />
     <!-- Link to calendar icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
   </head>
   <body>
-    <h1 class="SetReminderHeading">Delete Reminder</h1>
-    <form class="SetReminderFrom">
-      <label class="SetReminderFromLabel" for="date">Selected Date:</label>
-      <label class="SetReminderFromInput" id="date"></label>
+    <h1 class="deleteHeading">Delete Reminder</h1>
+    <form class="deleteFrom">
+      <label class="deleteFromLabel" for="date">Date:</label>
+      <label class="deleteFromInput" id="date"></label>
       <br /><br />
-      <label class="SetReminderFromLabel" for="subject"
-        >Selected Subject:</label
-      >
-      <label class="SetReminderFromInput" id="subject" name="subject"> </label
+      <label class="deleteFromLabel" for="subject">Subject:</label>
+      <label class="deleteFromInput" id="subject" name="subject"> </label
       ><br /><br />
-      <label class="SetReminderFromLabel" for="description">Description:</label
+      <label class="deleteFromLabel" for="description">Description:</label
       ><br />
       <label
-        class="SetReminderFromInput"
+        class="deleteFromInput"
         id="description"
         name="description"
         rows="4"
         cols="50"
       ></label
       ><br /><br />
-      <label class="SetReminderFromLabel" for="email"
-        >Enter Email Address:</label
-      >
-      <label class="SetReminderFromInput" id="email" name="email"></label
+      <label class="deleteFromLabel" for="email">Email ID:</label>
+      <label class="deleteFromInput" id="email" name="email"></label
       ><br /><br />
-      <label class="SetReminderFromLabel" for="text">Phone Number</label>
-      <label
-        class="SetReminderFromInput"
-        type="text"
-        id="phone"
-        name="phone number"
-      >
+      <label class="deleteFromLabel" for="text">Mobile No:</label>
+      <label class="deleteFromInput" type="text" id="phone" name="phone number">
       </label>
       <br />
       <br />
-      <label class="SetReminderFromLabel">Is Reminder Enabled</label>
-      <label class="SetReminderFromInput" id="IsEnable"></label>
+      <label class="deleteFromLabel">Is Reminder Enabled</label>
+      <label class="deleteFromInput" id="IsEnable"></label>
       <br />
       <br />
       <input
         type="submit"
-        id="SetReminderFromBtn"
+        id="deleteFromBtn"
         value="Delete"
         onclick="DeleteReminder(event)"
       />
       <input
         type="button"
-        id="SetReminderFromBackBtn"
+        id="deleteFromBackBtn"
         value="Back"
         class="Back-btn"
         onclick="cancel()"
       />
     </form>
-    <a href="Logout.html" style="float: right margin-right 10px">Log Out</a>
+    <a
+      class="deleteLogout"
+      href="Logout.html"
+      style="float: right margin-right 10px"
+      >Log Out</a
+    >
     <script src="..\Script\DeleteReminder.js"></script>
   </body>
 </html>

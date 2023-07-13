@@ -1,6 +1,5 @@
-/* Global styles */
-
 body {
+  background-color: #d3d3d3;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -11,8 +10,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/* 
 
-/* Header styles */
+
 
 header {
   background-color: #333;
@@ -50,8 +50,6 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
-
-/* Form styles */
 
 form {
   margin: 20px;
@@ -135,10 +133,8 @@ button[type="submit"]:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/*set reminder */
-
 .SetReminderFrom {
-  background-color: #3e8e41;
+  background-color: #0e9c15;
 }
 .SetReminderFromLabel {
   font-size: 1.2rem;
@@ -191,7 +187,7 @@ button[type="submit"]:hover {
 .SetReminderHeading {
   text-align: center;
 }
-/* Footer styles */
+
 
 footer {
   background-color: #333;
@@ -227,4 +223,4 @@ table {
   text-align: center;
   width: 90%;
   margin: auto;
-}
+} */

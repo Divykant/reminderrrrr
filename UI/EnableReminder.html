@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <title>Reminder Form</title>
     <!-- Link to CSS stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/enableStyle.css" />
     <!-- Link to calendar icon -->
     <link
       rel="stylesheet"
@@ -12,54 +13,45 @@
     />
   </head>
   <body>
-    <h1 class="SetReminderHeading">Enable Reminder</h1>
-    <form class="SetReminderFrom">
-      <label class="SetReminderFromLabel" for="date">Selected Date:</label>
-      <label class="SetReminderFromInput" id="date"></label>
+    <h1 class="enableHeading">Enable Reminder</h1>
+    <form class="enableFrom">
+      <label class="enableFromLabel" for="date">Date:</label>
+      <label class="enableFromInput" id="date"></label>
       <br /><br />
-      <label class="SetReminderFromLabel" for="subject"
-        >Selected Subject:</label
-      >
-      <label class="SetReminderFromInput" id="subject" name="subject"> </label
+      <label class="enableFromLabel" for="subject">Subject:</label>
+      <label class="enableFromInput" id="subject" name="subject"> </label
       ><br /><br />
-      <label class="SetReminderFromLabel" for="description">Description:</label
+      <label class="enableFromLabel" for="description">Description:</label
       ><br />
       <label
-        class="SetReminderFromInput"
+        class="enableFromInput"
         id="description"
         name="description"
         rows="4"
         cols="50"
       ></label
       ><br /><br />
-      <label class="SetReminderFromLabel" for="email"
-        >Enter Email Address:</label
-      >
-      <label class="SetReminderFromInput" id="email" name="email"></label
+      <label class="enableFromLabel" for="email">Email ID:</label>
+      <label class="enableFromInput" id="email" name="email"></label
       ><br /><br />
-      <label class="SetReminderFromLabel" for="text">Phone Number</label>
-      <label
-        class="SetReminderFromInput"
-        type="text"
-        id="phone"
-        name="phone number"
-      >
+      <label class="enableFromLabel" for="text">Mobile No:</label>
+      <label class="enableFromInput" type="text" id="phone" name="phone number">
       </label>
       <br />
       <br />
-      <label class="SetReminderFromLabel">Is Reminder Enabled</label>
-      <label class="SetReminderFromInput" id="IsEnable"></label>
+      <label class="enableFromLabel">Is Reminder Enabled</label>
+      <label class="enableFromInput" id="IsEnable"></label>
       <br />
       <br />
       <input
         type="submit"
-        id="SetReminderFromBtn"
+        id="enableFromBtn"
         value="Enable"
         onclick="enable(event)"
       />
       <input
         type="button"
-        id="SetReminderFromBackBtn"
+        id="enableFromBackBtn"
         value="Back"
         class="Back-btn"
         onclick="cancel()"

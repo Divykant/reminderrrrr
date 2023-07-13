@@ -1,0 +1,34 @@
+body {
+  text-align: center;
+}
+.homeHeading {
+  background-color: #969696;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  text-transform: capitalize;
+}
+.homeButton {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin: 1rem;
+  background-color: rgb(255, 31, 117);
+}
+.homeButton:hover {
+  background-color: rgb(138, 0, 46);
+}
+.homeButton a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.homeLogout {
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin-top: 5rem;
+  color: blue;
+}
+.homeLogout:hover {
+  color: black;
+}

@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>ViewReminder</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<h1>View Reminder</h1>
-	<form>
-		<table id="reminders">
-			<tr>
-			<th>
-				Date
-			</th>
-			<th>Subject</th>
-			<th>Description</th>
-			<th>Email</th>
-			<th>ContactNo</th>
-			<th>IsEnabled</th>
-			<th>Select</th></tr>
-		</table>
-        <br>
-        <br>
-        <input type="button" value="Back"class="Back-btn"onclick = "cancel()">
-        <input type="button" value="EnableReminder"class="fwd-btn"onclick = "enable()">
-        <input type="button" value="DisableReminder"class="fwd-btn"onclick = "disable()">
-        <input type="button" value="ModifyReminder"class="fwd-btn"onclick = "modify()">
-        <input type="button" value="DeleteReminder"class="fwd-btn"onclick = "remove()">
-	</form>
-	<a href="Logout.html" style="float: right margin-right 10px;">Log Out</a>
-<script src = "..\Script\ViewReminder.js"> 
-	</script>
-</body>
+  <head>
+    <title>ViewReminder</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/viewStyle.css" />
+  </head>
+  <body>
+    <h1 class="viewHeading">View Reminder</h1>
+    <form class="viewFrom">
+      <table class="viewTable" id="reminders">
+        <tr class="viewTableTr">
+          <th class="viewTableTh">Date</th>
+          <th class="viewTableTh">Subject</th>
+          <th class="viewTableTh">Description</th>
+          <th class="viewTableTh">Email</th>
+          <th class="viewTableTh">ContactNo</th>
+          <th class="viewTableTh">IsEnabled</th>
+          <th class="viewTableTh">Select</th>
+        </tr>
+      </table>
+      <br />
+      <br />
+      <input
+        type="button"
+        id="viewFromBackBtn"
+        value="Back"
+        class="Back-btn"
+        onclick="cancel()"
+      />
+      <input
+        type="button"
+        id="viewFromBtn"
+        value="EnableReminder"
+        class="fwd-btn"
+        onclick="enable()"
+      />
+      <input
+        type="button"
+        id="viewFromBtn"
+        value="DisableReminder"
+        class="fwd-btn"
+        onclick="disable()"
+      />
+      <input
+        type="button"
+        id="viewFromBtn"
+        id="viewFromBtn"
+        value="ModifyReminder"
+        class="fwd-btn"
+        onclick="modify()"
+      />
+      <input
+        type="button"
+        id="viewFromBtn"
+        value="DeleteReminder"
+        class="fwd-btn"
+        onclick="remove()"
+      />
+    </form>
+    <a
+      class="viewLogout"
+      href="Logout.html"
+      style="float: right margin-right 10px"
+      >Log Out</a
+    >
+    <script src="..\Script\ViewReminder.js"></script>
+  </body>
 </html>
